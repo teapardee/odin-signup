@@ -1,9 +1,49 @@
+@font-face {
+  font-family: "PatrickHand"; /*a name to be used later*/
+  src: url(".assets/PatrickHand-Regular.ttf"); /*URL to font*/
+}
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: ;
+
   color: var(--txt);
 
   /* outline: 1px solid red; */
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  height: 65vh;
+  width: 60vw;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.left-container {
+  display: flex;
+  position: relative;
+}
+
+#sailing {
+  height: 100%;
+}
+
+.companyname {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 20px;
+  font-family: "PatrickHand", cursive;
+  font-size: 5vh;
+  color: white;
 }
