@@ -23,7 +23,7 @@
         <div class="companyname">SAILAWAY</div>
       </div>
       <div class="right-container">
-        <form action="#">
+        <form action="#" method="post">
           <div class="header-container">
             <img src="assets/sailingicon.png" />
             <h2>Create an Account</h2>
@@ -33,19 +33,37 @@
           <section>
             <div class="input-field">
               <label for="name"><span>Full Name</span></label>
-              <input type="text" id="name" name="username" />
+              <input
+                type="text"
+                id="name"
+                name="username"
+                placeholder="Enter your full name"
+              />
             </div>
             <div class="input-field">
               <label for="name"
                 ><span>Email <span style="color: red">*</span></span></label
               >
-              <input type="text" id="email" name="email" />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
             </div>
             <div class="input-field">
               <label for="password"
                 ><span>Password <span style="color: red">*</span></span></label
               >
-              <input type="text" id="password" name="password" />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+                minlength="5"
+                required
+              />
             </div>
           </section>
           <section>

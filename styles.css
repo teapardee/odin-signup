@@ -47,13 +47,16 @@ body {
 .companyname {
   display: flex;
   position: absolute;
+  justify-content: center;
   left: 50%;
+  width: 100%;
   transform: translate(-50%, 0);
   margin-top: 20px;
   font-family: "Questrial";
-  font-size: 5vh;
+  font-size: 5.5vh;
   color: white;
   letter-spacing: 0.2rem;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Right Side */
@@ -116,6 +119,20 @@ label {
 input {
   height: 3rem;
   border: 1px lightgray solid;
+}
+
+input,
+input:placeholder-shown {
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding-left: 0.5rem;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+input:not(:focus):not(:placeholder-shown):invalid {
+  border-color: red;
 }
 
 section:first-of-type {
