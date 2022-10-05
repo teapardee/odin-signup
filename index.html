@@ -24,7 +24,10 @@
       </div>
       <div class="right-container">
         <form action="#">
-          <h2>Create an Account</h2>
+          <div class="header-container">
+            <img src="assets/sailingicon.png" />
+            <h2>Create an Account</h2>
+          </div>
           <p>Looking for your next adventure?</p>
           <p>Drop us a line.</p>
           <section>
@@ -33,11 +36,15 @@
               <input type="text" id="name" name="username" />
             </div>
             <div class="input-field">
-              <label for="name"><span>Email *</span></label>
+              <label for="name"
+                ><span>Email <span style="color: red">*</span></span></label
+              >
               <input type="text" id="email" name="email" />
             </div>
             <div class="input-field">
-              <label for="password"><span>Password *</span></label>
+              <label for="password"
+                ><span>Password <span style="color: red">*</span></span></label
+              >
               <input type="text" id="password" name="password" />
             </div>
           </section>

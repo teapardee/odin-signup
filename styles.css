@@ -75,11 +75,16 @@ form {
 }
 
 /* Form */
+.header-container {
+  display: flex;
+  margin: 1rem 1rem 1.5rem 1rem;
+  justify-content: center;
+  align-items: center;
+}
 
 h2 {
   font-size: 2rem;
-  margin: 1rem 2rem 1.5rem 2rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
 }
 
 form > p {
@@ -129,6 +134,7 @@ button,
   margin-bottom: 15px;
   border-radius: 5px;
   border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .signupgoogle {
