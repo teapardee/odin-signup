@@ -17,8 +17,13 @@
   /* outline: 1px solid red; */
 }
 
+html {
+}
+
 body {
   display: flex;
+  flex-direction: column;
+  position: relative;
   align-items: center;
   justify-content: center;
   height: 100vh;
@@ -154,6 +159,11 @@ button,
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+button:hover,
+.signupgoogle:hover {
+  transform: scale(1.05);
+}
+
 .signupgoogle {
   display: flex;
   justify-content: center;
@@ -183,4 +193,21 @@ a {
 img {
   height: 1.5rem;
   margin-right: 0.75rem;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+
+  width: 100%;
+}
+
+.copyright {
+  width: 100%;
+  position: fixed;
+  text-align: left;
+  margin-left: 5px;
+  bottom: 0;
+  font-size: 0.75rem;
 }
