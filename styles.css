@@ -8,7 +8,11 @@
   padding: 0px;
   box-sizing: border-box;
   font-size: 62.5%;
-  --white: var(--white);
+  color: #212121;
+
+  font-family: "Poppins", sans-serif;
+  --blue: var(#193b59);
+  --lightblue: var(#1976d2);
 
   /* outline: 1px solid red; */
 }
@@ -67,19 +71,26 @@ form {
   align-items: center;
   height: 75%;
   width: 55%;
-  background-color: grey;
+  background-color: white;
 }
 
 /* Form */
 
 h2 {
   font-size: 2rem;
-  margin: 1.5rem;
+  margin: 1rem 2rem 1.5rem 2rem;
+  letter-spacing: 0.1rem;
 }
 
 form > p {
-  font-size: 1rem;
-  margin: 0 1.5rem 1.5rem 1.5rem;
+  font-size: 1.1rem;
+  margin: 0 1.5rem 0.5rem 1.5rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+form > p:last-of-type {
+  margin-bottom: 0.5rem;
 }
 
 section {
@@ -92,10 +103,61 @@ section {
 }
 
 label {
-  font-size: 1.5rem;
-  margin: 5px 0 10px 0;
+  font-size: 1.75rem;
+  margin: 5px 0 5px 0;
+  font-weight: 400;
 }
 
 input {
   height: 3rem;
+  border: 1px lightgray solid;
+}
+
+section:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+button,
+.signupgoogle {
+  width: 100%;
+  height: 3rem;
+  line-height: 3rem;
+  background-color: #193b59;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border-style: none;
+}
+
+.signupgoogle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #1976d2;
+  border: 1px lightgray solid;
+}
+
+.signupgoogle > span {
+  font-size: 1.1rem;
+}
+
+form > section > p {
+  font-size: 1rem;
+
+  font-weight: 300;
+}
+
+a {
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: underline;
+  margin-left: 2px;
+}
+
+img {
+  height: 1.5rem;
+  margin-right: 0.75rem;
 }
