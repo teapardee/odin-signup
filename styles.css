@@ -9,20 +9,13 @@
   box-sizing: border-box;
   font-size: 62.5%;
   color: #212121;
-
   font-family: "Poppins", sans-serif;
   --blue: var(#193b59);
   --lightblue: var(#1976d2);
-
-  /* outline: 1px solid red; */
-}
-
-html {
 }
 
 body {
   display: flex;
-  flex-direction: column;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -79,10 +72,10 @@ form {
   align-items: center;
   height: 75%;
   width: 55%;
-  background-color: white;
 }
 
 /* Form */
+
 .header-container {
   display: flex;
   margin: 1rem 1rem 1.5rem 1rem;
@@ -199,7 +192,6 @@ img {
 
 footer {
   position: relative;
-
   width: 100%;
 }
 
